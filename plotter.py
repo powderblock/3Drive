@@ -58,35 +58,7 @@ def moveY(w1, w2, w3, w4):
 
 def moveZ(w1, w2):
   GPIO.output(za1, w1)
-  GPIO.output(ya1, w1)
-  GPIO.output(ya2, w2)
-  GPIO.output(yb1, w3)
-  GPIO.output(yb2, w4)
-
-def moveZ(w1, w2):
-  GPIO.output(za1, w1)
   GPIO.output(za2, w2)
-
-def dot():
-  moveZ(0, 0)
-  time.sleep(0.2)
-  moveZ(0, 1)
-  time.sleep(0.34)
-  moveZ(0, 0)
-  time.sleep(0.2)
-  moveZ(1, 0)
-  time.sleep(0.5)
-
-def moveLeft(steps):
-  for i in range(0, steps):
-      moveX(1,0,1,0)
-      time.sleep(delay)
-      moveX(1,0,0,1)
-      time.sleep(delay)
-      moveX(0,1,0,1)
-      time.sleep(delay)
-      moveX(0,1,1,0)
-      time.sleep(delay)
 
 def dot():
   moveZ(0, 0)
